@@ -9,7 +9,9 @@ public class PagesController {
 
     @GetMapping("/hello")
     public String sayHello(){
-        return "hello world";
+        return "Hello World";
     }
+
+
 
 }

@@ -1,6 +1,8 @@
 com/example/demo/HelloController.java
  com.example.demo.HelloController
-com/example/demo/DemoApplication.java
- com.example.demo.DemoApplication
 com/example/demo/PagesController.java
  com.example.demo.PagesController
+com/example/demo/Math.java
+ com.example.demo.Math
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication

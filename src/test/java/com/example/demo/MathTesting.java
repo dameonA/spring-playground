@@ -14,19 +14,19 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(PagesController.class)
-public class PagesControllerTest {
+@WebMvcTest(Math.class)
+public class MathTesting {
 
     @Autowired
     MockMvc mvc;
 
     @Test
-    public void testHomepage() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/hello");
+    public void getPi() throws Exception{
+        RequestBuilder request = MockMvcRequestBuilders.get("/math/pi");
 
         this.mvc.perform(request)
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello World"));
+                .andExpect(content().string("3.141592653589793"));
     }
 
 
